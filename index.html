@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Guard</title>
+    <link rel="icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Landing.png" alt="Your Image" class="landing-image">
+    <div class="upload-container" style="background-color: white; position:absolute; margin-left: 30%;">
+        <div class="image-upload-holder">
+            <img id="image-placeholder" src="Imageholder.jpg" alt="Image Placeholder" class="image-placeholder" />
+            <img id="image-preview" src="#" alt="Image Preview" class="imagePreview" style="display: none;" />
+            <label for="file-input">
+                <img src="Choose.png" alt="Choose File Button" class="button-image"/>
+            </label>
+            <input type="file" id="file-input" name="image" style="display: none;"/>
+            
+        </div>
+        <label for="file-upload">
+            <img src="Upload.png" alt="Upload Button" class="button-image" />
+        </label>
+        <input type="submit" id="file-upload" style="display: none;" />
+        <div class="prediction-container">
+            <p id="prediction-output"></p>
+        </div>
+    </div>
+
+    <script>
+        // Listen for file input changes
+        document.getElementById('file-input').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                
+                // Once the file is read, set it as the source of the image-preview element
+                reader.onload = function(e) {
+                    document.getElementById('image-preview').src = e.target.result;
+                    document.getElementById('image-preview').style.display = 'block'; // Show the image preview
+                    document.getElementById('image-placeholder').style.display = 'none'; // Hide the placeholder
+                };
+                
+                reader.readAsDataURL(this.files[0]); // Read the file
+            }
+        });
+        
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

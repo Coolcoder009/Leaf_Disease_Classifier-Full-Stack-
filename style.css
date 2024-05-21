@@ -1,0 +1,59 @@
+/* Base styles from style.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 99%;
+    object-fit: contain; /* Keeps aspect ratio and fits the whole image */
+}
+
+/* Upload box and related components from sty.css */
+.upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 25px;
+  width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: -180px 0px 0px 0px;
+  background-color: white;
+}
+
+
+
+.image-upload-holder {
+  display: flex;
+  align-items: center;
+}
+
+.image-placeholder, .imagePreview {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* Assumed continuation for choose-file-button */
+.choose-file-button {
+  cursor: pointer;
+  border: none; /* Assuming you want to remove the default border */
+  padding: 10px 20px; /* Example padding, adjust as needed */
+}
+.button-image {
+  width: 100px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintain the aspect ratio */
+}
+.button-image:hover {
+  cursor: pointer;
+}
+
+.prediction-container {
+  text-align: center;
+}
+
+
