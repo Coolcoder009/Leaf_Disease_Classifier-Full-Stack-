@@ -16,16 +16,18 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-2. To install the required dependencies, run the following command:
-```bash
-pip install -r requirements.txt
-```
-
-3. Create a virtual environment and activate it:
+2. Create a virtual environment and activate it:
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
 ```
+
+3. To install the required dependencies, run the following command:
+```bash
+pip install -r requirements.txt
+```
+
+
 
 ## How It Works
 ### Frontend
