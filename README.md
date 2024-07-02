@@ -1,6 +1,7 @@
 # Leaf_Disease_Classifier-Full-Stack
 
 Leaf Disease Classifier is a full-stack web application designed to classify leaf diseases using a trained machine learning model. The application includes a user-friendly frontend interface and a FastAPI backend for handling requests and model predictions.
+<br>
 ![UI Path](https://github.com/Coolcoder009/Leaf_Disease_Classifier-Full-Stack-/blob/main/Screenshot%202024-04-18%20174742.jpg?raw=true) <br>
 
 ## This is the link for the trained model <br>
